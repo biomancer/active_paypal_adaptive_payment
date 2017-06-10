@@ -13,9 +13,9 @@ module ActiveMerchant
 
       def initialize(json, xml_request = nil, action = nil)
         @json = json
-        @response = Hashie::Rash.new(MultiJson.decode(json))
+        @response = Hashie::RashAPAPImplementation.new(MultiJson.decode(json))
         @xml_request = xml_request
-        @request =  Hashie::Rash.from_xml(xml_request)
+        @request =  Hashie::RashAPAPImplementation.from_xml(xml_request)
         @action = action
       end
 

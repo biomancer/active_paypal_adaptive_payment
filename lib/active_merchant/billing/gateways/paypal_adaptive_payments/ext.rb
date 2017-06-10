@@ -4,7 +4,7 @@
 require 'hashie/mash'
 
 module Hashie
-  class Rash < Mash
+  class RashAPAPImplementation < Mash
 
     protected
 
